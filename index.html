@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
     <title>Let´s Coder</title>
     <link rel="stylesheet" href="css/finstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,34 +55,13 @@
                     </div>
                     <div class="flip-card-back">
                         <div>
-                            <p class="fecha numero">25</p>
+                            <p class="fecha media numero">25</p>
                         </div>
                         <div>
-                            <p class="fecha desc">Enero <br>Lunes</p>
+                            <p class="fecha media desc">Enero <br>Lunes</p>
                         </div>
                         <div>
-                            <p class="fecha desc"><span>Curso Full-Time </span><br>Online</p>
-                        </div>
-                        <div>
-                            <a href="#inscribe"><input type="button" value="Inscribirme" class=" fecha desc boton"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class=flip-card-inner>
-                    <div class="flip-card-front">
-                        <img src="images/bootcamp.jpg" alt="tarjeta frontal">
-                    </div>
-                    <div class="flip-card-back">
-                        <div>
-                            <p class="fecha negrita numero">28</p>
-                        </div>
-                        <div>
-                            <p class="fecha desc">Enero <br>Jueves</p>
-                        </div>
-                        <div>
-                            <p class="fecha desc"><span>Curso Part-Time </span><br>Online</p>
+                            <p class="fecha media desc"><span>Curso Full-Time </span><br>Online</p>
                         </div>
                         <div>
                             <a href="#inscribe"><input type="button" value="Inscribirme" class=" fecha desc boton"></a>
@@ -97,13 +76,34 @@
                     </div>
                     <div class="flip-card-back">
                         <div>
-                            <p class="fecha negrita numero">03</p>
+                            <p class="fecha media negrita numero">28</p>
                         </div>
                         <div>
-                            <p class="fecha desc">Marzo <br>Lunes</p>
+                            <p class="fecha media desc">Enero <br>Jueves</p>
                         </div>
                         <div>
-                            <p class="fecha desc"><span>Curso Full-Time </span><br>Online</p>
+                            <p class="fecha media desc"><span>Curso Part-Time </span><br>Online</p>
+                        </div>
+                        <div>
+                            <a href="#inscribe"><input type="button" value="Inscribirme" class=" fecha desc boton"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class=flip-card-inner>
+                    <div class="flip-card-front">
+                        <img src="images/bootcamp.jpg" alt="tarjeta frontal">
+                    </div>
+                    <div class="flip-card-back">
+                        <div>
+                            <p class="fecha media negrita numero">03</p>
+                        </div>
+                        <div>
+                            <p class="fecha media desc">Marzo <br>Lunes</p>
+                        </div>
+                        <div>
+                            <p class="fecha media desc"><span>Curso Full-Time </span><br>Online</p>
                         </div>
                         <div>
                             <a href="#inscribe"><input type="button" value="Inscribirme" class=" fecha desc boton"></a>
@@ -389,7 +389,7 @@
                                 <option value="extremadura">Extremadura</option>
                                 <option value="madrid">Comunidad de Madrid</option>
                             </select><br>
-                            <label for="cp">Código postal</label>
+                            <label class="codigo" for="cp">Código postal</label>
                             <input class="postal" type="text" name="cp" id="cp" placeholder="C.P." maxlength="5">
                         </div>
                         <div class="edad">
@@ -401,7 +401,7 @@
                             <input class="otrasangria" type="email" name="email" id="email" placeholder="@mail"
                                 required>
                             <label for="telefono">Teléfono*</label>
-                            <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" required>
+                            <input type="tel" name="telefono" class="telefono" placeholder="Teléfono" required>
                         </div>
                     </fieldset>
                     <fieldset>
