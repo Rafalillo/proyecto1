@@ -1,0 +1,467 @@
+/********* Estilo cabecera *****************/
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../images/background-image.jpg);
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    color: white;
+}
+
+.navbar {
+    display: inline-block;
+    position: relative;
+    margin-left: 60px;
+    background-color: rgb(252, 166, 6, 0.8);
+    height: 60px;
+    position: fixed;
+    border-radius: 0px 25px 25px / 0px 25px 25px 0px;
+    
+}
+
+.navbar:hover {
+    opacity: 1;
+}
+
+.navegacion:hover ~ .logoimagen {
+    border-radius: 25px 0px 0px 25px;
+}
+.navbar li {
+    display: inline;
+    margin-right: 15px;
+    opacity: 0.6;
+}
+
+li:hover {
+    opacity: 1;
+}
+
+.navegacion:hover ~ .logoimagen{
+    border-radius: 25px 0px 0px 25px;
+}
+
+a {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-size: 1.5em;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.logoimagen {
+    position: fixed;
+    opacity: 0.6;
+    float: left;
+    height: 60px;
+}
+
+.navegacion:hover > .oculto {
+    display: block;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.logoimagen:hover {
+    border-radius: 25px 0px 0px 25px;
+}
+
+.logo-felicidades {
+    text-align: center;
+}
+
+.texto-felicidades {
+    color: rgb(252, 166, 6, 0.8);
+    margin-top: 200px;
+    transition: background-color 300ms;
+}
+.letraheader {
+    text-align: center;
+    color: blanchedalmond;
+}
+
+.inicio {
+    margin-top: 5PX;
+    background-color: rgb(252, 166, 6, 0.5);
+    border-radius: 25%;
+    color: blanchedalmond;
+    width: 100px;
+    height: 50px;
+}
+
+.inicio:hover {
+    transform: scale(1.2);
+}
+/****************** pagina home *******************/
+
+.principal {
+    
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 250px;
+
+}
+
+.numero {
+    font-size: 1.5em;
+    
+}
+ .fecha {
+    background-color: rgba(0, 0, 0, 0.125);
+    display: inline-block;
+    padding: 15px;
+    border: solid 1px rgba(250, 9, 9, 0.125);
+    border-radius: 25px;
+    border: 1px solid rgba(250, 9, 9, 0.125);
+}  
+
+ .boton {
+    margin-bottom: 10px;
+    border-radius: 25%;
+    color: blanchedalmond;
+}
+
+.boton:hover {
+    transform: scale(1.2);
+}
+
+.texto-fechas {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: -150px;
+} 
+
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    
+    border: 1px solid rgba(250, 9, 9, 0.125);
+    border-radius: 0.25rem;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front img {
+    width: 300px;
+    border: 1px solid rgba(250, 9, 9, 0.125);
+    border-radius: 25px;
+}
+
+  .flip-card-front {
+    width: 200px;
+    color: black;
+  }
+  
+  .flip-card-back {
+    width: 300px;
+    background-color: rgb(252, 166, 6);
+    color: blanchedalmond;
+    transform: rotateY(180deg);
+    border-radius: 25px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+
+  }
+/********* Pagina mentores *****************/
+
+.headmentor {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.tarjetas-mentores {
+
+}
+.mentores{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.mentor-card {
+    max-width: 200px;
+    display: inline-table;
+    margin-left: 300px;
+    position: relative;
+    text-align: center;
+    background-color: rgb(252, 166, 6, 0.5);
+    opacity: 0.8;
+    background-clip: border-box;
+    border: 2px solid rgba(250, 9, 9, 0.125);
+    border-radius: 25px;
+}
+
+.mentor-card h2 {
+    margin-bottom: 0;
+    background-color: rgba(170, 14, 14, 0.03);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.125);
+}
+
+.mentorimg {
+    width: 200px;
+    height: 200px;
+    border-radius:20px;
+}
+
+.oculto {
+    display:none; 
+    transition: all .5s;
+}
+
+.mentor-card:hover > .oculto {
+    display:block;
+    transition: all .5s;
+    
+}
+
+.headmentor p {
+    background-color: rgb(252, 166, 6, 0.5);
+    border-radius: 20px;
+}
+
+
+/********************** pagina contacto ********************/
+
+.main-contact {
+    
+    background-color: rgb(252, 166, 6);
+    text-align: center;
+    opacity: 0.8;
+    background-clip: border-box;
+    border: 2px solid rgba(250, 9, 9, 0.125);
+    border-radius: 25px;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+.flecha-arriba {
+    text-align: right;
+    font-size: 2em;
+    margin-bottom: 35px;
+}
+  
+.flecha-abajo {
+    text-align: right;
+    font-size: 2em;
+    margin-top: 250px;
+}
+
+.flecha-abajo-info {
+    text-align: right;
+    font-size: 2em;
+    margin-top: -50px;
+}
+.flecha-arriba-mentor {
+    margin-bottom: -70px;
+    text-align: right;
+    font-size: 2em;
+    z-index: 3;
+}
+
+.flecha-arriba-inscribe {
+    text-align: right;
+    font-size: 2em;
+    margin-top: -80px;
+}
+
+.flecha-abajo-inscribe {
+    text-align: right;
+    font-size: 2em;
+    margin-top: -80px;
+}
+
+.flecha-arriba-contacto {
+    text-align: right;
+    font-size: 2em;
+    margin-bottom: 100px;
+}
+
+/************ Página Información ******************/
+
+.tabla-alumnos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.texto-info, .texto-form, .texto-fechas, .texto-sobre {
+    text-align: center;
+    color: rgb(252, 166, 6);
+    text-shadow: 2px 2px yellowgreen;
+    height: min-content;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+.tabla {
+    display: flex;
+    justify-content: center;
+}
+table {
+    border: 1px solid rgb(252, 166, 6);
+}
+
+td {
+    text-align: center;
+    width: 300px;
+    border: 1px solid rgb(252, 166, 6);
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(252, 166, 6, 0.5);
+}
+
+tr:nth-child(even) {
+    background-color:transparent;
+}
+
+
+.sin-color {
+    background-color: transparent;
+}
+
+.listas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.lista-ordenada, .lista-desordenada, .lista-definicion   {
+    background-color: rgb(252, 166, 6, 0.6);
+    border: 1px solid rgba(250, 9, 9, 0.125);
+    box-shadow: 2px 2px rgb(252, 166, 6);
+}
+
+.lista-desordenada li, .lista-definicion dt {
+    margin-left: 40px;
+}
+ .lista-definicion dd {
+     margin-left: 60px;
+ }
+
+.listas ul, .listas ol {
+    display: flex; flex-direction: column;
+ }
+
+
+ /************ Página Formulario ******************/
+
+
+ .main-form {
+     width: 50%;
+     margin: 0 auto;
+     background-color: rgb(252, 166, 6, 0.5);
+ }
+
+ .datos, .masinfo, .texto-sobremi  {
+     display: flex;
+     flex-direction: column;
+     margin: 0px auto;
+     
+ }
+
+ .datos label, .datos input {
+     margin: 5px;
+ }
+
+ .obligatorio {
+     font-size: 0.8em;
+     text-align: center;
+ }
+
+ .botones {
+     display: flex;
+     justify-content: space-around;
+ }
+
+ .boton-form{
+     margin-top: 5PX;
+     background-color: rgb(252, 166, 6, 0.5);
+     border-radius: 25%;
+     color: blanchedalmond;
+     width: 100px;
+     height: 50px;
+ }
+
+.boton-form:hover {
+    transform: scale(1.2);
+}
+
+.direccion .city {
+    margin-left: 25px;
+}
+
+.cp {
+    display: flex;
+}
+
+.cp select {
+    height: 20px;
+    margin-top: 5px;
+}
+
+fieldset .sangria {
+    margin-left: 90px;
+}
+
+fieldset .postal {
+    margin-left: 12px;
+    width: 45px;
+}
+
+fieldset .nacimiento {
+    margin-left: 23px;
+}
+
+fieldset .otrasangria {
+    margin-left: 19px;
+}
