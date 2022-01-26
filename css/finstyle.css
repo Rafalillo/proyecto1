@@ -10,7 +10,7 @@ html {
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    color: white;
+    color: black;
 }
 
 .navbar {
@@ -47,7 +47,7 @@ li:hover {
 
 a {
     text-decoration: none;
-    color: blanchedalmond;
+    /* color: blanchedalmond; */
     font-size: 1.5em;
 }
 
@@ -84,14 +84,14 @@ ul {
 }
 .letraheader {
     text-align: center;
-    color: blanchedalmond;
+    /* color: blanchedalmond; */
 }
 
 .inicio {
     margin-top: 5PX;
     background-color: rgb(252, 166, 6, 0.5);
     border-radius: 25%;
-    color: blanchedalmond;
+    /* color: blanchedalmond; */
     width: 100px;
     height: 50px;
 }
@@ -126,7 +126,7 @@ ul {
  .boton {
     margin-bottom: 10px;
     border-radius: 25%;
-    color: blanchedalmond;
+    /* color: blanchedalmond; */
 }
 
 .boton:hover {
@@ -182,7 +182,7 @@ ul {
   .flip-card-back {
     width: 300px;
     background-color: rgb(252, 166, 6);
-    color: blanchedalmond;
+    /* color: blanchedalmond; */
     transform: rotateY(180deg);
     border-radius: 25px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.5);
@@ -212,7 +212,7 @@ ul {
     position: relative;
     text-align: center;
     background-color: rgb(252, 166, 6, 0.5);
-    opacity: 0.8;
+    opacity: 0.9;
     background-clip: border-box;
     border: 2px solid rgba(250, 9, 9, 0.125);
     border-radius: 25px;
@@ -253,7 +253,7 @@ ul {
     
     background-color: rgb(252, 166, 6);
     text-align: center;
-    opacity: 0.8;
+    opacity: 0.9;
     background-clip: border-box;
     border: 2px solid rgba(250, 9, 9, 0.125);
     border-radius: 25px;
@@ -273,6 +273,7 @@ ul {
     }
   }
 
+  /********************** flechas ********************/
 .flecha-arriba {
     text-align: right;
     font-size: 2em;
@@ -291,16 +292,17 @@ ul {
     margin-top: -50px;
 }
 .flecha-arriba-mentor {
-    margin-bottom: -70px;
+    margin-bottom: -60px;
     text-align: right;
     font-size: 2em;
-    z-index: 3;
+    z-index: 5;
 }
 
 .flecha-arriba-inscribe {
     text-align: right;
     font-size: 2em;
-    margin-top: -80px;
+    /* margin-bottom: -200px; */
+    float: right;
 }
 
 .flecha-abajo-inscribe {
@@ -317,6 +319,9 @@ ul {
 
 /************ Página Información ******************/
 
+.container-info {
+    margin-bottom: 120px;
+}
 .tabla-alumnos {
     display: flex;
     flex-direction: column;
@@ -362,12 +367,14 @@ tr:nth-child(odd) {
 }
 
 tr:nth-child(even) {
-    background-color:transparent;
+    background-color: #BEAEB9;
+    opacity: 0.8;
 }
 
 
 .sin-color {
-    background-color: transparent;
+    background-color: #BEAEB9;
+    opacity: 0.8;
 }
 
 .listas {
@@ -428,7 +435,7 @@ tr:nth-child(even) {
      margin-top: 5PX;
      background-color: rgb(252, 166, 6, 0.5);
      border-radius: 25%;
-     color: blanchedalmond;
+     /* color: blanchedalmond; */
      width: 100px;
      height: 50px;
  }
@@ -491,7 +498,7 @@ fieldset .otrasangria {
 
     .logoimagen {
         position: fixed;
-        opacity: 0.6;
+        opacity: 0.8;
         float: left;
         height: 80px;
     }
@@ -536,7 +543,7 @@ fieldset .otrasangria {
     .container-mentores .mentor-card{
         display: flex;
         flex-direction: column;
-        margin-left: 125px ;
+        margin-left: 160px;
     }
 
     .container-listas .listas {
